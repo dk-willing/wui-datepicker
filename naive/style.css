@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --br: 0.8rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  background-color: #fafafa;
+}
+
+.container {
+  text-align: center;
+}
+
+.label {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #232132;
+}
+
+.version-badge {
+  display: inline-block;
+  background-color: #ffc9c9;
+  color: #f03e3e;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+/* DATE PICKER */
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.date-input {
+  padding: 1.2rem 1.6rem;
+  width: 32rem;
+  border: none;
+  outline: none;
+
+  border: 2.2px solid #adb5bd;
+  border-radius: var(--br);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.date-input:hover {
+  border-color: #343a40;
+}
+
+.date-input:focus-visible,
+.date-input:focus {
+  outline: #adb5bd;
+  border-color: #343a40;
+  box-shadow: 0 0 0 2px rgba(173, 181, 189, 0.386);
+}
+
+.date-picker {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: var(--br);
+}
+
+.date-picker__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #adb5bd6e;
+  padding: 1.6rem;
+}
+.date-picker__nav {
+  display: flex;
+  gap: 1.2rem;
+}
+.date-picker__nav-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 1.2rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--br);
+
+  transition: all 0.2s linear;
+}
+.date-picker__nav-btn:hover {
+  background-color: #e9ecef;
+}
+
+.date-picker__nav-btn:focus-visible,
+.date-picker__nav-btn:focus {
+  background-color: #e9ecef;
+  outline: 1px solid #232132;
+}
+
+.date-picker__title {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.date-picker__calender {
+  padding: 1.6rem;
+  padding-top: 1.2rem;
+}
+.date-picker__weekdays {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.date-picker__weekday {
+  color: #868e96;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.date-picker__footer {
+  padding: 1.6rem;
+  border-top: 2px solid #adb5bd6e;
+  display: flex;
+  gap: 1.3rem;
+}
+.date-picker__today-btn {
+  border: none;
+  outline: none;
+  background-color: #343a40;
+  color: #fff;
+  width: 50%;
+  padding: 1rem;
+  border-radius: var(--br);
+  cursor: pointer;
+}
+.date-picker__clear-btn {
+  border: none;
+  outline: none;
+  width: 50%;
+  border-radius: var(--br);
+  cursor: pointer;
+}
