@@ -59,6 +59,7 @@ body {
   border-radius: var(--br);
   cursor: pointer;
   background-color: #fff;
+  font-size: 1.6rem;
 }
 
 .date-input:hover {
@@ -145,8 +146,8 @@ body {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(7, 1fr);
-  gap: 2px;
-  margin-top: 0.8rem;
+  gap: 1rem;
+  margin-top: 1.2rem;
 }
 .date-picker__day {
   cursor: pointer;
