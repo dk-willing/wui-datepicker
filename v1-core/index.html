@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="datepicker.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1 class="label">Willing | - CALENDER UI</h1>
+        <div class="version-badge">v0 - Naive</div>
+
+        <div class="input-wrapper">
+
+            <input type="text" placeholder="Select Date..." class="date-input" readonly>
+
+            <div class="date-picker">
+                <div class="date-picker__header">
+
+                    <div class="date-picker__nav">
+                        <button title="Previous Year" class="date-picker__nav-btn date-picker__nav-btn-prev-year">
+                            «
+                        </button>
+                        <button title="Previous Month" class="date-picker__nav-btn date-picker__nav-btn-prev-month">
+                            ‹
+                        </button>
+                    </div>
+
+                    <span class="date-picker__title">December 2025</span>
+
+                    <div class="date-picker__nav">
+                        <button title="Next Month" class="date-picker__nav-btn date-picker__nav-btn-next-month">
+                            ›
+                        </button>
+                        <button title="Next Year" class="date-picker__nav-btn date-picker__nav-btn-next-year">
+                            »
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="date-picker__calender">
+                    <div class="date-picker__weekdays">
+                        <div class="date-picker__weekday">Sun</div>
+                        <div class="date-picker__weekday">Mon</div>
+                        <div class="date-picker__weekday">Tue</div>
+                        <div class="date-picker__weekday">Wed</div>
+                        <div class="date-picker__weekday">Thu</div>
+                        <div class="date-picker__weekday">Fri</div>
+                        <div class="date-picker__weekday">Sat</div>
+                    </div>
+
+                    <div class="date-picker__days">
+                        <!-- Days would be created by JavaScript -->
+                        <div class="date-picker__day">
+                            1
+                        </div>
+                        <div class="date-picker__day">
+                            1
+                        </div>
+                        <div class="date-picker__day date-picker__day-today">
+                            1
+                        </div>
+                        <div class="date-picker__day">
+                            1
+                        </div>
+                        <div class="date-picker__day date-picker__day-selected">
+                            1
+                        </div>
+                        <div class="date-picker__day">
+                            1
+                        </div>
+                        <div class="date-picker__day">
+                            1
+                        </div>
+                    </div>
+                </div>
+
+                <div class="date-picker__footer">
+                    <button class="date-picker__today-btn">Today</button>
+                    <button class="date-picker__clear-btn">Clear</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
