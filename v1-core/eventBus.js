@@ -71,3 +71,5 @@ class EventBus {
     return count;
   }
 }
+
+export default EventBus;
